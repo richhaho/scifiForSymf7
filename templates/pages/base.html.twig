@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+{# templates/base.html.twig #}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>{% block title %}SCIFI-Symfony7{% endblock %}</title>
+
+    <link rel="icon" href="{{ asset ('assets/images/brand-logos/favicon.ico') }}" type="image/x-icon">
+
+    <!-- BOOTSTRAP CSS -->
+    <link  id="style" href="{{ asset ('libs/bootstrap/css/bootstrap.min.css')}}" rel="stylesheet">
+
+    <!-- ICONS CSS -->
+    <link href="{{ asset('css/icons.css') }}" rel="stylesheet">
+    
+    <!-- STYLES CSS -->
+    <link rel="stylesheet" href="{{ asset('css/styles.css') }}">
+
+    <!-- MAIN JS -->
+    <script src="{{ asset ('js/main.js') }}"></script>
+
+    <!-- NODE WAVES CSS -->
+    <link href="{{ asset ('libs/node-waves/waves.min.css') }}" rel="stylesheet"> 
+
+    <!-- SIMPLEBAR CSS -->
+    
+    <link rel="stylesheet" href="{{ asset ('libs/simplebar/simplebar.min.css') }}">
+
+    <!-- COLOR PICKER CSS -->
+    <link rel="stylesheet" href="{{ asset ('libs/flatpickr/flatpickr.min.css') }}">
+    <link rel="stylesheet" href="{{ asset ('libs/@simonwep/pickr/themes/nano.min.css') }}">
+
+    <link href="{{asset ('libs/swiper/swiper-bundle.min.css') }}" rel="stylesheet">
+
+    <!-- CHOICES CSS -->
+    <link rel="stylesheet" href="{{ asset ('libs/choices.js/public/assets/styles/choices.min.css') }}">
+    <!-- CHOICES JS -->
+    <script src="{{asset ('libs/choices.js/public/assets/scripts/choices.min.js')}}"></script>
+</head>
+<body>
+    {# TopMenu #}
+    {% include 'pages/topMenu.html.twig' %}
+
+    {# LeftMenu #}
+    {% include 'pages/leftMenu.html.twig' %}
+
+    {# Main #}
+    <div class="container">
+        {% block body %}{% endblock %}
+    </div>
+
+    {# Here are Script JS #}
+
+    <script src="{{asset ('js/alerts.js') }}"></script>
+
+    <!-- POPPER JS -->
+    <script src="{{ asset ('libs/@popperjs/core/umd/popper.min.js') }}"></script>
+
+    <!-- BOOTSTRAP JS -->
+    <script src="{{ asset ('libs/bootstrap/js/bootstrap.bundle.min.js') }}"></script>
+
+    <!-- NODE WAVES JS -->
+    <script src="{{ asset ('libs/node-waves/waves.min.js') }}"></script>
+
+    <!-- SIMPLEBAR JS -->
+    <script src="{{ asset ('libs/simplebar/simplebar.min.js') }}"></script>
+    <script src="{{ asset ('js/simplebar.js') }}"></script>
+
+    <!-- COLOR PICKER JS -->
+    <script src="{{ asset ('libs/@simonwep/pickr/pickr.es5.min.js') }}"></script>
+
+    <!-- STICKY JS -->
+    <script src="{{ asset ('js/sticky.js') }}"></script>
+
+    <!-- DEFAULTMENU JS -->
+    <script src="{{ asset ('js/defaultmenu.js') }}"></script>
+
+    <!-- CUSTOM JS -->
+    <script src="{{ asset ('js/custom.js') }}"></script>
+
+    <!-- CUSTOM-SWITCHER JS -->
+    <script src="{{ asset ('js/custom-switcher.js') }}"></script>
+
+    <!-- POPPER JS -->
+    <script src="{{asset ('libs/@popperjs/core/umd/popper.min.js')}}"></script>
+
+    <!-- BOOTSTRAP JS -->
+    <script src="{{ asset ('libs/bootstrap/js/bootstrap.bundle.min.js')}}"></script>
+
+    <!-- NODE WAVES JS -->
+    <script src="{{asset ('libs/node-waves/waves.min.js')}}"></script>
+
+    <!-- SIMPLEBAR JS -->
+    <script src="{{asset ('libs/simplebar/simplebar.min.js')}}"></script>
+
+    <!-- COLOR PICKER JS -->
+    <script src="{{asset ('libs/@simonwep/pickr/pickr.es5.min.js')}}"></script>
+
+    <!-- Apex Charts JS -->
+    <script src="{{asset ('libs/apexcharts/apexcharts.min.js') }}"></script>
+
+    <!-- JSVector Maps JS -->
+    <script src="{{asset ('libs/jsvectormap/maps/world-merc.js') }}"></script>
+    <script src="{{asset ('libs/jsvectormap/maps/worlds.js') }}"></script>
+
+    <!-- JSVector Maps MapsJS -->
+    <script src="{{asset ('libs/jsvectormap/maps/world-merc.js') }}"></script>
+
+    <!-- Dashboard --> 
+    <script src="{{asset ('js/gaming-dashboard.js') }}"></script>
+    <!-- END SCRIPTS -->
+
+</body>
+</html>

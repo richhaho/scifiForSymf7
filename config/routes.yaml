@@ -1,0 +1,9 @@
+controllers:
+    resource:
+        path: ../src/Controller/
+        namespace: App\Controller
+    type: attribute
+
+# landing_router:
+#     path: /
+#     controllers: App\Controller\DashboardController::index
