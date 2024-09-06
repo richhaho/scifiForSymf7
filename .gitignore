@@ -2,6 +2,7 @@
 ###> symfony/framework-bundle ###
 /.env
 /vendor/
+/var/
 ###< symfony/framework-bundle ###
 
 ###> symfony/webpack-encore-bundle ###
