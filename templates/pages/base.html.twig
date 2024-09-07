@@ -19,8 +19,6 @@
     <!-- STYLES CSS -->
     <link rel="stylesheet" href="{{ asset('css/styles.css') }}">
 
-    <!-- MAIN JS -->
-    <script src="{{ asset ('js/main.js') }}"></script>
 
     <!-- NODE WAVES CSS -->
     <link href="{{ asset ('libs/node-waves/waves.min.css') }}" rel="stylesheet"> 
@@ -52,7 +50,7 @@
         {% block body %}{% endblock %}
     </div>
 
-    {# Here are Script JS #}
+        {# Here are Script JS #}
 
     <script src="{{asset ('js/alerts.js') }}"></script>
 
@@ -67,10 +65,22 @@
 
     <!-- SIMPLEBAR JS -->
     <script src="{{ asset ('libs/simplebar/simplebar.min.js') }}"></script>
-    <script src="{{ asset ('js/simplebar.js') }}"></script>
 
     <!-- COLOR PICKER JS -->
     <script src="{{ asset ('libs/@simonwep/pickr/pickr.es5.min.js') }}"></script>
+
+    <!-- Apex Charts JS -->
+    <script src="{{ asset ('libs/apexcharts/apexcharts.min.js') }}"></script>
+
+    <!-- JSVector Maps JS -->
+    <script src="{{ asset ('libs/jsvectormap/js/jsvectormap.min.js') }}"></script>
+
+    <!-- JSVector Maps MapsJS -->
+    <script src="{{asset ('libs/jsvectormap/maps/world-merc.js') }}"></script>
+    
+    <!-- Dashboard --> 
+    <script src="{{asset ('js/gaming-dashboard.js') }}"></script>
+
 
     <!-- STICKY JS -->
     <script src="{{ asset ('js/sticky.js') }}"></script>
@@ -84,33 +94,6 @@
     <!-- CUSTOM-SWITCHER JS -->
     <script src="{{ asset ('js/custom-switcher.js') }}"></script>
 
-    <!-- POPPER JS -->
-    <script src="{{asset ('libs/@popperjs/core/umd/popper.min.js')}}"></script>
-
-    <!-- BOOTSTRAP JS -->
-    <script src="{{ asset ('libs/bootstrap/js/bootstrap.bundle.min.js')}}"></script>
-
-    <!-- NODE WAVES JS -->
-    <script src="{{asset ('libs/node-waves/waves.min.js')}}"></script>
-
-    <!-- SIMPLEBAR JS -->
-    <script src="{{asset ('libs/simplebar/simplebar.min.js')}}"></script>
-
-    <!-- COLOR PICKER JS -->
-    <script src="{{asset ('libs/@simonwep/pickr/pickr.es5.min.js')}}"></script>
-
-    <!-- Apex Charts JS -->
-    <script src="{{asset ('libs/apexcharts/apexcharts.min.js') }}"></script>
-
-    <!-- JSVector Maps JS -->
-    <script src="{{asset ('libs/jsvectormap/maps/world-merc.js') }}"></script>
-    <script src="{{asset ('libs/jsvectormap/maps/worlds.js') }}"></script>
-
-    <!-- JSVector Maps MapsJS -->
-    <script src="{{asset ('libs/jsvectormap/maps/world-merc.js') }}"></script>
-
-    <!-- Dashboard --> 
-    <script src="{{asset ('js/gaming-dashboard.js') }}"></script>
     <!-- END SCRIPTS -->
 
 </body>
